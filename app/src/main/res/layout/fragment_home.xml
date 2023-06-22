@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/charcoal"
+    android:fillViewport="true"
+    tools:context=".ui.view.fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="40dp">
+
+            <TextView
+                android:id="@+id/text_demo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="@string/heading" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_sub_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/grey"
+            android:paddingHorizontal="40dp"
+            android:text="@string/sub_heading" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_home_banner"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="horizontal"
+            tools:listitem="@layout/recycler_view_home_banner_item"
+            android:layout_marginTop="15dp"/>
+
+        <GridView
+            android:layout_marginTop="20dp"
+            android:id="@+id/grid_view_home"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:horizontalSpacing="6dp"
+            android:nestedScrollingEnabled="false"
+            android:numColumns="2"
+            tools:listitem="@layout/grid_view_home_item"
+            android:verticalSpacing="6dp" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="heading">Discover</string>
+    <string name="sub_heading">Trending Locations today</string>
+    <string name="details_button">Click for Slide 1</string>
+    <string name="parent_bottom_sheet_button">Click for Slide 2</string>
+    <string name="parent_bottom_sheet_text">Slide 1 Clicked</string>
+    <string name="child_bottom_sheet_text">Slide 2 Clicked</string>
+    <string name="child_bottom_sheet_button">Click for Slide 3</string>
+    <string name="sub_child_bottom_sheet_button">Click To Close All Slides</string>
+    <string name="details_title">Welcome</string>
+    <string name="details_description">to the demo app for slides</string>
+    <string name="details_background_image_description">details background image</string>
+</resources>
